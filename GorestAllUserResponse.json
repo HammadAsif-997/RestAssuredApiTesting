@@ -1,0 +1,72 @@
+[
+    {
+        "id": 6889133,
+        "name": "Ms. Subodh Mehrotra",
+        "email": "ms_subodh_mehrotra@mcdermott.example",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 6889131,
+        "name": "Mr. Aanandinii Marar",
+        "email": "mr_aanandinii_marar@hilpert-kertzmann.example",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 6889129,
+        "name": "The Hon. Bandhul Bharadwaj",
+        "email": "hon_the_bharadwaj_bandhul@parisian-oconner.test",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 6889128,
+        "name": "Gitanjali Patil Sr.",
+        "email": "sr_gitanjali_patil@pollich-walsh.test",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 6889127,
+        "name": "Sharda Iyer VM",
+        "email": "sharda_vm_iyer@rodriguez-mclaughlin.test",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 6889126,
+        "name": "Bhaaswar Sethi",
+        "email": "bhaaswar_sethi@macgyver.test",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 6889125,
+        "name": "Anilaabh Kaniyar Esq.",
+        "email": "esq_kaniyar_anilaabh@gerhold-goodwin.test",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 6889124,
+        "name": "Ganesh Tagore",
+        "email": "ganesh_tagore@littel.test",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 6889123,
+        "name": "The Hon. Devak Tandon",
+        "email": "hon_devak_the_tandon@cremin.example",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 6889121,
+        "name": "Miss Bhupen Dhawan",
+        "email": "bhupen_miss_dhawan@kohler.test",
+        "gender": "female",
+        "status": "inactive"
+    }
+]
