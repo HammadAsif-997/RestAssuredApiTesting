@@ -7,20 +7,6 @@
         "status": "active"
     },
     {
-        "id": 6888748,
-        "name": "Ashlesh Achari DO",
-        "email": "achari_do_ashlesh@lind.example",
-        "gender": "male",
-        "status": "inactive"
-    },
-    {
-        "id": 6888747,
-        "name": "Bhishma Khatri",
-        "email": "bhishma_khatri@bernier.test",
-        "gender": "male",
-        "status": "active"
-    },
-    {
         "id": 6888746,
         "name": "Amritambu Tagore",
         "email": "amritambu_tagore@nader.test",
@@ -68,5 +54,19 @@
         "email": "manoj_tagore@spencer-fahey.test",
         "gender": "female",
         "status": "inactive"
+    },
+    {
+        "id": 6888739,
+        "name": "Som Gupta",
+        "email": "gupta_som@gulgowski-gorczany.test",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 6888738,
+        "name": "Anshula Chattopadhyay",
+        "email": "chattopadhyay_anshula@cormier.example",
+        "gender": "male",
+        "status": "active"
     }
 ]
