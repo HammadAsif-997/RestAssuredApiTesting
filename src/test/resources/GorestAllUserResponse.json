@@ -1,19 +1,5 @@
 [
     {
-        "id": 6888753,
-        "name": "Brahmabrata Gowda V",
-        "email": "gowda_v_brahmabrata@dibbert.example",
-        "gender": "male",
-        "status": "active"
-    },
-    {
-        "id": 6888752,
-        "name": "Dr. Meghnath Mahajan",
-        "email": "dr_mahajan_meghnath@raynor-pouros.example",
-        "gender": "female",
-        "status": "active"
-    },
-    {
         "id": 6888751,
         "name": "Darshan Gupta",
         "email": "darshan_gupta@watsica.test",
@@ -68,5 +54,19 @@
         "email": "pilla_bhuvaneshwar@boehm.test",
         "gender": "female",
         "status": "active"
+    },
+    {
+        "id": 6888743,
+        "name": "Omana Sharma",
+        "email": "sharma_omana@kshlerin-mills.test",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 6888742,
+        "name": "Gayatri Iyer",
+        "email": "gayatri_iyer@wintheiser-price.example",
+        "gender": "male",
+        "status": "inactive"
     }
 ]
