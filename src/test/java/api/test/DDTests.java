@@ -5,11 +5,9 @@ import api.endpoints.UserEndPoints;
 import api.utilities.DataProviders;
 import io.restassured.response.Response;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-import java.util.Arrays;
+
 import java.util.Objects;
 
 import static org.hamcrest.Matchers.*;

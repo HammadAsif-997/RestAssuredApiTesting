@@ -1,19 +1,9 @@
 package api.test;
 
 import api.endpoints.UserEndPoints;
-import api.payloads.User;
-import com.aventstack.extentreports.Status;
-import com.github.javafaker.Faker;
 import io.restassured.response.Response;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import java.util.PriorityQueue;
-import java.util.Properties;
-
-import static io.restassured.RestAssured.baseURI;
-import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
 public class UserTest extends BaseTest{
@@ -35,11 +25,10 @@ public class UserTest extends BaseTest{
 
         Response response = UserEndPoints.ReadUser("2");
         response.then().log().all();
-
         Assert.assertEquals(response.getStatusCode(),200);
     }
 
-    @Test(priority = 2)
+    @Test(priority = 3)
     public void TestReadAllUsersPageAndRecord(){
         Response response = UserEndPoints.ReadAllUsers();
 
@@ -52,14 +41,14 @@ public class UserTest extends BaseTest{
     }
 
 
-    @Test(priority = 3)
+    @Test(priority = 4)
     public void TestUpdateUserAllData(){
 
         userPayload.setFirst_name(faker.name().firstName());
         userPayload.setLast_name(faker.name().lastName());
         userPayload.setEmail("hammad.asif@venturedive.com");
 
-        Response response = UserEndPoints.UpdateUser("2",userPayload);
+        Response response = UserEndPoints.UpdateUser(userID,userPayload);
         response.then().log().all()
                 .statusCode(200)
                 .assertThat().body("first_name",comparesEqualTo(userPayload.getFirst_name()))
@@ -69,12 +58,12 @@ public class UserTest extends BaseTest{
     }
 
 
-    @Test(priority = 3)
+    @Test(priority = 5)
     public void TestUpdateUserLastName(){
 
         userPayload.setLast_name(faker.name().lastName());
 
-        Response response = UserEndPoints.UpdateUser("2",userPayload);
+        Response response = UserEndPoints.UpdateUser(userID,userPayload);
         response.then().log().all()
                 .statusCode(200)
                 .assertThat().body("first_name",comparesEqualTo(userPayload.getFirst_name()))
@@ -84,7 +73,7 @@ public class UserTest extends BaseTest{
     }
 
 
-    @Test(priority = 4)
+    @Test(priority = 6)
     public void TestDeleteUser(){
 
         Response response = UserEndPoints.DeleteUser("2");

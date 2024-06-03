@@ -31,7 +31,7 @@ public class GorestTest {
         file.flush();
         file.close();
     }
-    @Test
+    @Test(priority = 1)
     public void TestActiveAndInactive() throws IOException {
         baseURI = baseURL;
         Response response = when().get("/users");
@@ -43,7 +43,7 @@ public class GorestTest {
 
     }
 
-    @Test
+    @Test(priority = 2)
     public void ReadAllUsers() throws IOException {
         baseURI = baseURL;
         Response response = when().get("/users");
