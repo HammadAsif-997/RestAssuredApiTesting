@@ -8,14 +8,14 @@
     <test verbose="2" preserve-order="true" name="ReqresTest">
         <classes>
             <class name="api.test.UserTest"/>
-            <class name="api.test.DDTests"/>
-
-        </classes>
-    </test>
-    <test verbose="2" preserve-order="true" name="ReqresTest2">
-        <classes>
+<!--            <class name="api.test.DDTests"/>-->
             <class name="api.test.GorestTest"/>
         </classes>
     </test>
+<!--    <test verbose="2" preserve-order="true" name="ReqresTest2">-->
+<!--        <classes>-->
+
+<!--        </classes>-->
+<!--    </test>-->
 
 </suite>

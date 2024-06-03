@@ -14,7 +14,7 @@ public class UserEndPoints {
         ResourceBundle routes = ResourceBundle.getBundle("config");
         return routes;
     }
-    static String baseUrl = getURL().getString("reqresAPIBaseUrl");
+    static String baseUrl = getURL().getString("reqresAPIBaseUrl");;
     public static Response CreateUser(User payload){
         String postUser = getURL().getString("postUser");
         baseURI = baseUrl;
@@ -44,7 +44,7 @@ public class UserEndPoints {
         return response;
     }
 
-    public static Response UpdateUser(int userId, User payload){
+    public static Response UpdateUser(String userId, User payload){
         String patchUser = getURL().getString("patchUser");
         baseURI = baseUrl;
         Response response = given()

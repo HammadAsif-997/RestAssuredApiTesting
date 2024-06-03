@@ -1,14 +1,22 @@
 package api.utilities;
 
 import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import org.testng.ITestContext;
 import org.testng.ITestListener;
+import com.aventstack.extentreports.ExtentTest;
+import org.testng.ITestContext;
 import org.testng.ITestResult;
+import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -58,6 +66,7 @@ public class ExtentReportManager implements ITestListener {
         test.assignCategory(result.getMethod().getGroups());
         test.createNode(result.getName());
         test.log(Status.PASS, "Test Passed");
+//        test.log(Status.INFO, result.getThrowable());
     }
 
 

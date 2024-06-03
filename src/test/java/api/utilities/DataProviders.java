@@ -9,8 +9,8 @@ public class DataProviders {
     @DataProvider(name="Data")
     public String[][] getAllData() throws IOException
     {
-        String path=System.getProperty("user.dir")+"/src/test/resources/Userdata.xlsx";
-
+//        String path=System.getProperty("user.dir")+ "/Testdata/Userdata.xlsx";
+        String path= "./src/test/resources/Userdata.xlsx";
         XLUtility xl=new XLUtility(path);
 
         int rownum=xl.getRowCount("Sheet1");
@@ -33,7 +33,7 @@ public class DataProviders {
     @DataProvider(name="FirstNames")
     public String[] getUserNames() throws IOException
     {
-        String path=System.getProperty("user.dir")+"/src/test/resources/Userdata.xlsx";
+        String path=System.getProperty("user.dir")+"//testData//Userdata.xlsx";
         XLUtility xl=new XLUtility(path);
 
         int rownum=xl.getRowCount("Sheet1");
@@ -51,7 +51,7 @@ public class DataProviders {
     @DataProvider(name="UserID")
     public String[] getUserIds() throws IOException
     {
-        String path=System.getProperty("user.dir")+"/src/test/resources/Userdata.xlsx";
+        String path=System.getProperty("user.dir")+"//testData//Userdata.xlsx";
         XLUtility xl=new XLUtility(path);
 
         int rownum=xl.getRowCount("Sheet1");
