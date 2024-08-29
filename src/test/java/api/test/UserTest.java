@@ -57,7 +57,7 @@ public class UserTest extends BaseTest{
 
         userPayload.setFirst_name(faker.name().firstName());
         userPayload.setLast_name(faker.name().lastName());
-        userPayload.setEmail("hammad.asif@venturedive.com");
+        userPayload.setEmail("hmmd97@gmail.com");
 
         Response response = UserEndPoints.UpdateUser("2",userPayload);
         response.then().log().all()
